@@ -1,0 +1,11 @@
+
+ol {
+  list-style:none;   /* To remove the numbered bullets from the list */
+}
+
+section{
+border: solid 1px black;
+margin:20px ;
+padding:20px 20px 20px 20px;
+
+}
