@@ -33,3 +33,8 @@ display:inline-block;
   align: left;
   vertical-align: top;
 }
+
+.nav ul{
+list-style: none;
+
+}
