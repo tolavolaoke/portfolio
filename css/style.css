@@ -21,6 +21,7 @@ margin:0 auto;
 align:right;
 width: 79%;
 display:inline-block;
+border:solid 1px black;
 
 }
 
@@ -32,6 +33,9 @@ display:inline-block;
   display: inline-block;
   align: left;
   vertical-align: top;
+  background-color: grey;
+  color:white;
+  border: solid 1px black;
 }
 
 .nav ul{
