@@ -1,44 +1,86 @@
+*{
+
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 
 ol {
   list-style:none;   /* To remove the numbered bullets from the list */
 }
 
-section{
-  padding:30px 30px 30px 30px;
-border: none;
-margin:10px;
-margin-left: 50px;
-margin-right: 50px;
-
+ul{
+color:grey;
 
 }
 
 
-#right{
+section{
+  padding:30px 30px 30px 30px; /* The amount of space between the content and the border*/
+border: none;
+margin:10px; /* The space between the border and the edge of the page*/
+margin-left: 50px;
+margin-right: 50px;
+}
+
+div .class email{
+  color:grey;
+}
+
+
+p{
+  color: grey;
+
+}
+/*#right{
 padding:0px;
 border: none;
 margin:0 auto;
 align:right;
-width: 79%;
+width: 69%;
 display:inline-block;
-border:solid 1px black;
+border: solid 1px black; /* REMOVE WHEN FINISHED*/
 
-}
+}*/
 
-#left {
-  padding:0px;
+/*#left {
+  padding:10px 10px 10px 10px;
   border: none;
-  margin:0 auto;
-  width: 20%;
+    border: solid 1px black; /* REMOVE WHEN FINISHED*/
+  /*margin:0 auto;
+  width: 30%;
   display: inline-block;
   align: left;
   vertical-align: top;
   background-color: grey;
   color:white;
   border: solid 1px black;
-}
+
+}*/
 
 .nav ul{
 list-style: none;
+position:fixed;
 
+}
+
+
+/*.show-menu-btn {
+    display: block;
+    position: fixed;
+    right: 25px;
+    top: 30px;
+    z-index: 9998;
+    width: 16px;
+    height: 12px;
+
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}*/
+
+.row img {
+position:fixed;
+  width:100%;
+  transform: (90deg);
 }
