@@ -1,15 +1,9 @@
-# portfolio
-My online portfolio and cv
+# Sparta Portfolio
+My Sparta online portfolio and cv
 
-## Usage
+#Bulit with
+Bootstap 4 framework
+HTML, CSS, SASS
 
-To compile the SCSS into CSS:
-
-'''
-$npm install -g node-sass:
-
-
-''' bash
-$ npm install -g node-sass
-$ cd CSS
-$ node-sass style.scss>main
+#Author
+T olaoke
