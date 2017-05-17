@@ -1,9 +1,12 @@
-# Sparta Portfolio
-My Sparta online portfolio and cv
+## Portfolio
 
-#Bulit with
+My online portfolio and cv
+
+## Built with
+
 Bootstap 4 framework
 HTML, CSS
 
-#Author
-T olaoke
+## Author
+
+Tola Olaoke
