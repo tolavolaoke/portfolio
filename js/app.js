@@ -1,5 +1,3 @@
-// To define all the different states
-
 function MainRouter($stateProvider, $urlRouterProvider){
 
   $stateProvider
