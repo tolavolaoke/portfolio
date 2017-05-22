@@ -12,14 +12,11 @@ div + div article:nth-child(2) {
   background: white;
 }
 /* 3rd article section*/
-div + div article:nth-child(3) {
+/*div + div article:nth-child(3) {
   background: #F94F6A;
-}
-/* 4th article section*/
-/*div + div article:nth-child(4) {
-  background: #FFD1DC;
-
 }*/
+
+
 /* ------------------------Main layout ------------------------------*/
 html,
 body,
@@ -94,7 +91,7 @@ h3,
 h4,
 h5,
 h6 {
-  /*text-transform: uppercase;*/
+
   font-family: 'Quattrocento', Arial, sans-serif;
 }
 article div p {
@@ -125,46 +122,6 @@ article div p {
   }
 }
 
-/*--------------About me--------------------------*/
-.aboutme {
-  font-family: 'Quattrocento', Arial, sans-serif;
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin: 10px 1%;
-  /*min-width: px;
-  max-width: px;*/
-  width: 100%;
-  color: #141414;
-  text-align: left;
-  line-height: 1.4em;
-  font-size: 16px;
-}
-.aboutme * {
-  /*-webkit-box-sizing: border-box;
-  box-sizing: border-box;*/
-}
-.aboutme img {
-  max-width: 100%;
-  /*vertical-align:middle;*/
-  margin-right: inherit;
-  width: 170px;
-  height: 200px;
-  padding-left: 45px;
-}
-
-.aboutme li{
-  list-style: none;
-}
-
-.aboutme p {
-  /*font-size: 0.9em;
-  letter-spacing: 1px;
-  opacity: 0.9;*/
-}
-.aboutmecard {
-  background-color: white;
-}
 
 /* ---------------Name Title ------------------*/
 .name span {
@@ -185,13 +142,13 @@ article div p {
 }
 
 .name span:nth-child(1) {
-  font-size: 150px;
+  font-size: 100px;
 }
 
 .name span:nth-child(2) {
   font-family: 'Pacifico', cursive;
   font-weight: 400;
-  font-size: 70px;
+  font-size: 60px;
   position: relative;
   z-index: 1;
   text-shadow: 5px 0 0 #F94F6A,
@@ -215,31 +172,82 @@ article div p {
   margin-top:-12px;
 }
 
-
-/*--------------------------*/
-.miniheader{
-  border-style: solid;
-  border-color:#FFD1DC;
+/*--------------About me--------------------------*/
+.aboutme {
+  font-family: 'Quattrocento', Arial, sans-serif;
+  /*position: relative;*/
+  /*float: left;*/
+  /*overflow: hidden;*/
+  /*margin: 10px 1%;*/
+  /*min-width: px;
+  max-width: px;*/
+  /*width: 100%;*/
+  /*color: #141414;*/
+  /*text-align: left;*/
+  /*line-height: 1.4em;*/
+  font-size: 16px;
+  width: auto;
+  height: auto;
+  margin: 50px;
 }
+/*.aboutme * {*/
+  /*-webkit-box-sizing: border-box;
+  box-sizing: border-box;*/
+/*}*/
+/*.aboutme img {
+  max-width: 100%;*/
+  /*vertical-align:middle;*/
+  /*margin-right: inherit;
+  width: 170px;
+  height: 200px;
+  padding-left: 45px;
+}*/
+
+.aboutme li{
+  list-style: none;
+}
+
+.aboutme p {
+  /*font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;*/
+}
+.aboutMeCard {
+  background-color: white;
+  font-size: 10px;
+  padding:10px 10px;
+  border: solid;
+  width: auto;
+  height: auto;
+  margin:10px;
+}
+
+.contactCard{
+background-color: white;
+font-size: 10px;
+padding:30px 10px;
+border: solid;
+width: auto;
+height: auto;
+/*float:right;*/
+margin:10px;
+}
+
+
 
 /*----------projects ----------------*/
 .projectbox{
   list-style: none;
+  margin: 0 auto;
+  padding: 10px;
 }
 
-.projects{
-  /*border-style: solid;
-  border-color: black;*/
-}
 
 .projectimage{
-  width: 200px;
-  height: 150px;
+  width: 300px;
+  height:250px;
   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-}
-/*-------- Contact Section----------------*/
-.contact{
-  background-color: white;
+  filter:grayscale(100%);
 }
