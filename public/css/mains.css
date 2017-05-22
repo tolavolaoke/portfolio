@@ -133,7 +133,7 @@ article div p {
 .name {
   width:400px;
   height:400px;
-  margin:50px auto;
+  margin:20px auto;
 	text-align: center;
 	color: #F5C4B6;
   line-height:0.85;
@@ -175,46 +175,19 @@ article div p {
 /*--------------About me--------------------------*/
 .aboutme {
   font-family: 'Quattrocento', Arial, sans-serif;
-  /*position: relative;*/
-  /*float: left;*/
-  /*overflow: hidden;*/
-  /*margin: 10px 1%;*/
-  /*min-width: px;
-  max-width: px;*/
-  /*width: 100%;*/
-  /*color: #141414;*/
-  /*text-align: left;*/
-  /*line-height: 1.4em;*/
-  font-size: 16px;
   width: auto;
   height: auto;
   margin: 50px;
 }
-/*.aboutme * {*/
-  /*-webkit-box-sizing: border-box;
-  box-sizing: border-box;*/
-/*}*/
-/*.aboutme img {
-  max-width: 100%;*/
-  /*vertical-align:middle;*/
-  /*margin-right: inherit;
-  width: 170px;
-  height: 200px;
-  padding-left: 45px;
-}*/
+
 
 .aboutme li{
   list-style: none;
 }
 
-.aboutme p {
-  /*font-size: 0.9em;
-  letter-spacing: 1px;
-  opacity: 0.9;*/
-}
 .aboutMeCard {
   background-color: white;
-  font-size: 10px;
+  font-size: 12px;
   padding:10px 10px;
   border: solid;
   width: auto;
@@ -224,12 +197,11 @@ article div p {
 
 .contactCard{
 background-color: white;
-font-size: 10px;
+font-size: 12px;
 padding:30px 10px;
 border: solid;
 width: auto;
 height: auto;
-/*float:right;*/
 margin:10px;
 }
 
@@ -244,10 +216,14 @@ margin:10px;
 
 
 .projectimage{
-  width: 300px;
+  width: 350px;
   height:250px;
   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   filter:grayscale(100%);
+}
+
+.projectimage:hover{
+  filter:grayscale(0%);
 }
