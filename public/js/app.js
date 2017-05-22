@@ -7,6 +7,7 @@ function MainRouter($stateProvider, $urlRouterProvider){
     url: '/home',
     templateUrl: '/states/home.html'
   });
+
   $urlRouterProvider.otherwise('/');
 }
 

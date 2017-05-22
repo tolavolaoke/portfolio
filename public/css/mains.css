@@ -6,26 +6,20 @@
 /* 1st article section */
 div + div article:nth-child(1) {
   background:#F94F6A;
-  border: 2px solid;
-  border-color: #FFD1DC;
 }
 /* 2nd article section*/
 div + div article:nth-child(2) {
-  background: #FFD1DC;
-
-
+  background: white;
 }
 /* 3rd article section*/
 div + div article:nth-child(3) {
-  background:white;
-  border: 2px solid;
-  border-color: #FFD1DC;
+  background: #F94F6A;
 }
 /* 4th article section*/
-div + div article:nth-child(4) {
+/*div + div article:nth-child(4) {
   background: #FFD1DC;
 
-}
+}*/
 /* ------------------------Main layout ------------------------------*/
 html,
 body,
@@ -168,6 +162,9 @@ article div p {
   letter-spacing: 1px;
   opacity: 0.9;*/
 }
+.aboutmecard {
+  background-color: white;
+}
 
 /* ---------------Name Title ------------------*/
 .name span {
@@ -226,9 +223,13 @@ article div p {
 }
 
 /*----------projects ----------------*/
-.gallery li{
+.projectbox{
   list-style: none;
+}
 
+.projects{
+  /*border-style: solid;
+  border-color: black;*/
 }
 
 .projectimage{
