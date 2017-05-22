@@ -186,25 +186,32 @@ article div p {
 }
 
 .aboutMeCard {
-  background-color: white;
+  /*background-color: white;*/
   font-size: 12px;
   padding:10px 10px;
-  border: solid;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
   width: auto;
   height: auto;
   margin:10px;
+  box-shadow:0 1px 5px 2px rgba(0,0,0,0.25),
+       inset 0 1px 5px 2px rgba(0,0,0,0.25);
 }
 
 .contactCard{
-background-color: white;
+/*background-color: white;*/
 font-size: 12px;
 padding:30px 10px;
-border: solid;
+border-style: solid;
+border-width: 2px;
+  border-color: white;
 width: auto;
 height: auto;
 margin:10px;
+ box-shadow:0 1px 5px 2px rgba(0,0,0,0.25),
+      inset 0 1px 5px 2px rgba(0,0,0,0.25);
 }
-
 
 
 /*----------projects ----------------*/
