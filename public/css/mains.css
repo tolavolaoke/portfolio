@@ -11,10 +11,6 @@ div + div article:nth-child(1) {
 div + div article:nth-child(2) {
   background: white;
 }
-/* 3rd article section*/
-/*div + div article:nth-child(3) {
-  background: #F94F6A;
-}*/
 
 
 /* ------------------------Main layout ------------------------------*/
@@ -31,7 +27,6 @@ div + div {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: stretch;
-  overflow: hidden;
 }
 /* -------------------------Articles --------------------------------*/
 div + div article {
@@ -69,29 +64,22 @@ div + div article:hover > div {
 /* -----------------------Navigation -----------------------------------*/
 div + div article > h2 {
   bottom: 2vh;
-  position: absolute;
+  position: fixed;
   text-align: center;
   width: 100%;
-  margin: 0;
-  font-size: 3vh;
+  margin: 0 auto;
+  font-size: 20px;
 }
 /* --------------------Article layouts ---------------------------------*/
 article div {
-  text-align: left;
-  width: 58vw;
+  /*text-align: left;*/
 }
 article div p,
 article div div h2,
 article div h3 {
   margin: 0 0 1em 0;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-
+h1,h2,{
   font-family: 'Quattrocento', Arial, sans-serif;
 }
 article div p {
@@ -122,6 +110,14 @@ article div p {
   }
 }
 
+/*------Wraps around Name Title and About Me--------*/
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 
 /* ---------------Name Title ------------------*/
 .name span {
@@ -132,7 +128,6 @@ article div p {
 
 .name {
   width:400px;
-  height:400px;
   margin:20px auto;
 	text-align: center;
 	color: #F5C4B6;
@@ -186,7 +181,6 @@ article div p {
 }
 
 .aboutMeCard {
-  /*background-color: white;*/
   font-size: 12px;
   padding:10px 10px;
   border-style: solid;
@@ -200,7 +194,6 @@ article div p {
 }
 
 .contactCard{
-/*background-color: white;*/
 font-size: 12px;
 padding:30px 10px;
 border-style: solid;
@@ -233,4 +226,16 @@ margin:10px;
 
 .projectimage:hover{
   filter:grayscale(0%);
+}
+
+.content{
+  border: 1px solid red;
+  height: 500px;
+  width:200px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.projects {
+  display: inline-block;
 }
