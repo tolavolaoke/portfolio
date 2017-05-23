@@ -10,7 +10,6 @@
     <article>
       <h2>About Me</h2>
         <div class="holder">
-          <!-- <h3>About Me</h3> -->
 
           <div class="wrap">
           <div class="name">
@@ -55,24 +54,23 @@
     <article>
       <h2>Projects</h2>
 
-
-
           <div class="projects">
             <ul>
             <li ng-repeat="project in portfolio.projects track by $index" class="projectbox">
               <img ng-src="{{project.img}}" alt="placeholder" class="projectimage" ui-sref="{{project.state}}"/>
             </li>
-
+            
+            <li ng-repeat="project in portfolio.projects track by $index" class="projectbox">
+              <img ng-src="{{project.img}}" alt="placeholder" class="projectimage" ui-sref="{{project.state}}"/>
+            </li>
             </ul>
           </div>
 
 
-      
         <div class="content">
 
+
         </div>
-
-
 
     </article>
   </div>

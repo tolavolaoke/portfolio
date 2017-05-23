@@ -73,6 +73,7 @@ div + div article > h2 {
 /* --------------------Article layouts ---------------------------------*/
 article div {
   /*text-align: left;*/
+  overflow: auto;
 }
 article div p,
 article div div h2,
@@ -85,6 +86,7 @@ h1,h2,{
 article div p {
   width: 40vw;
 }
+
 @media (max-width: 900px) {
   div + div article {
     padding: 2vh 3vw;
@@ -175,7 +177,6 @@ article div p {
   margin: 50px;
 }
 
-
 .aboutme li{
   list-style: none;
 }
@@ -198,7 +199,7 @@ font-size: 12px;
 padding:30px 10px;
 border-style: solid;
 border-width: 2px;
-  border-color: white;
+border-color: white;
 width: auto;
 height: auto;
 margin:10px;
@@ -208,9 +209,18 @@ margin:10px;
 
 
 /*----------projects ----------------*/
+.projects {
+  display: inline-block;
+  float:left;
+  padding: 10px;
+  margin-top: 0
+  width:auto; ;
+  margin-right:auto;
+}
+
 .projectbox{
   list-style: none;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   padding: 10px;
 }
 
@@ -230,12 +240,11 @@ margin:10px;
 
 .content{
   border: 1px solid red;
-  height: 500px;
-  width:200px;
+  height:518px;
+  width:650px;
   position: absolute;
-  right: 0;
-  top: 0;
-}
-.projects {
-  display: inline-block;
+  right: 50px;
+  top: 35px;
+  bottom: 0;
+  padding:10px
 }

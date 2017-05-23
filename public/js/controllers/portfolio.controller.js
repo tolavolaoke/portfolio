@@ -4,32 +4,32 @@ function PortfolioController(){
   controller.projects = [
     {
       title: 'Be Fit',
-      desc: '',
+      desc: 'WRITE DESCRIPTION HERE!',
       img: '../../images/beFit.png',
       gif: '',
       deployedlink: '',
       state: 'be-fit'
     },
     {
-      title: '',
-      desc: '',
-      img: '',
+      title: 'Family Tree',
+      desc: 'WRITE DESCRIPTION HERE!',
+      img: '../images/familyTree.png',
       gif: '',
-      deployedlink: ''
+      deployedlink: 'https://sg-project-3-to.herokuapp.com/#!/'
     },
     {
-      title: '',
-      desc: '',
-      img: '',
+      title: 'Game',
+      desc: 'WRITE DESCRIPTION HERE!',
+      img: '../images/game.png',
       gif: '',
-      deployedlink: ''
+      deployedlink: 'http://git.heroku.com/tolaoke-sg-project-1.git'
     },
     {
-      title: '',
-      desc: '',
-      img: '',
+      title: 'Movie Reviews',
+      desc: 'WRITE DESCRIPTION HERE!',
+      img: '../images/moviesRevs.png',
       gif: '',
-      deployedlink: ''
+      deployedlink: 'https://movierevs.herokuapp.com/'
     }
   ];
 
