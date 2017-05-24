@@ -1,23 +1,17 @@
 // To define all the different states
-
+// Partial views of projects created under home.html
 function MainRouter($stateProvider, $urlRouterProvider){
 
   $stateProvider
   .state('home',{
     url: '/',
-    templateUrl: '/states/home.html'
-  }),
-  $stateProvider
-  .state('project1',{
-    url: '/project1',
-    templateUrl: '/states/project1.html'
-  }),
-  $stateProvider
-  .state('be-fit',{
-    url: '/be-fit',
-    templateUrl: '/states/be-fit.html'
+    views: {
+      '': { templateUrl: '/states/home.html' },
+      'projectContent@home': { templateUrl: '/states/partials/project-content.html' },
+      'beFit@home': { templateUrl: '/states/partials/be-fit.html' },
+      'familyTree@home': { templateUrl: '/states/partials/family-tree.html' }
+    }
   });
-
 
   $urlRouterProvider.otherwise('/');
 }

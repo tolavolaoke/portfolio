@@ -57,20 +57,27 @@
           <div class="projects">
             <ul>
             <li ng-repeat="project in portfolio.projects track by $index" class="projectbox">
-              <img ng-src="{{project.img}}" alt="placeholder" class="projectimage" ui-sref="{{project.state}}"/>
+              <img
+                ng-src="{{project.img}}"
+                alt="placeholder"
+                class="projectimage"
+                ui-sref="{{project.state}}"
+                ng-click="project.makeProjectVisible()"/>
             </li>
-            
-            <li ng-repeat="project in portfolio.projects track by $index" class="projectbox">
-              <img ng-src="{{project.img}}" alt="placeholder" class="projectimage" ui-sref="{{project.state}}"/>
-            </li>
+
+
             </ul>
           </div>
 
 
-        <div class="content">
-
-
+        <div ng-if="portfolio.isDefaultVisible" class="content" ui-view="projectContent">
         </div>
+        <div ng-if="portfolio.isBeFitVisible" class="content" ui-view="beFit">
+        </div>
+        <div ng-if="portfolio.isFamilyTreeVisible" class="content" ui-view="familyTree">
+        </div>
+
+
 
     </article>
   </div>

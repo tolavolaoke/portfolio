@@ -8,14 +8,21 @@ function PortfolioController(){
       img: '../../images/beFit.png',
       gif: '',
       deployedlink: '',
-      state: 'be-fit'
+      makeProjectVisible: function() {
+        controller.isBeFitVisible = true;
+        controller.isDefaultVisible = controller.isFamilyTreeVisible = false;
+      }
     },
     {
       title: 'Family Tree',
       desc: 'WRITE DESCRIPTION HERE!',
       img: '../images/familyTree.png',
       gif: '',
-      deployedlink: 'https://sg-project-3-to.herokuapp.com/#!/'
+      deployedlink: 'https://sg-project-3-to.herokuapp.com/#!/',
+      makeProjectVisible: function() {
+        controller.isFamilyTreeVisible = true;
+        controller.isDefaultVisible = controller.isBeFitVisible = false;
+      }
     },
     {
       title: 'Game',
@@ -34,8 +41,10 @@ function PortfolioController(){
   ];
 
 
+
   function init() {
     console.log(controller);
+    controller.isDefaultVisible = true;
   }
   init();
 }
