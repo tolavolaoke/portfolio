@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 
-<div>
+<div ng-controller="PortfolioController as portfolio">
 
-<h1>{{portfolio.projects.title}}</h1>
-<p>{{portfolio.projects.desc}}</p>
+  <!-- <ul>
+<li ng-repeat="projects in portfolio.projects">{{projects.title}}</li>
+</ul> -->
+
+<div ng-repeat="projects in portfolio.projects">
+<h1>{{projects.title}}</h1>
+<p>{{projects.desc}}</p>
+{{projects.gif}}
+
+</div>
 
 xrdrctyvubdbcbdinvwshbfvhbvfuw
 </div>

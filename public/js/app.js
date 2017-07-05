@@ -9,8 +9,11 @@ function MainRouter($stateProvider, $urlRouterProvider){
       '': { templateUrl: '/states/home.html' },
       'projectContent@home': { templateUrl: '/states/partials/project-content.html' },
       'beFit@home': { templateUrl: '/states/partials/be-fit.html' },
-      'familyTree@home': { templateUrl: '/states/partials/family-tree.html' }
+      'familyTree@home': { templateUrl: '/states/partials/family-tree.html' },
+      'game@home': { templateUrl: '/states/partials/game.html' },
+      'moviesRevs@home': { templateUrl: '/states/partials/moviesrevs.html' }
     }
+
   });
 
   $urlRouterProvider.otherwise('/');

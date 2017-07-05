@@ -6,11 +6,14 @@ function PortfolioController(){
       title: 'Be Fit',
       desc: 'WRITE DESCRIPTION HERE!',
       img: '../../images/beFit.png',
-      gif: '',
+      gif: 'GIFFY GOES HERE',
       deployedlink: '',
       makeProjectVisible: function() {
         controller.isBeFitVisible = true;
-        controller.isDefaultVisible = controller.isFamilyTreeVisible = false;
+        controller.isDefaultVisible =
+        controller.isFamilyTreeVisible =
+        controller.isGameVisible =
+        controller.isMoviesRevsVisible = false;
       }
     },
     {
@@ -21,7 +24,10 @@ function PortfolioController(){
       deployedlink: 'https://sg-project-3-to.herokuapp.com/#!/',
       makeProjectVisible: function() {
         controller.isFamilyTreeVisible = true;
-        controller.isDefaultVisible = controller.isBeFitVisible = false;
+        controller.isDefaultVisible =
+        controller.isBeFitVisible =
+        controller.isGameVisible =
+        controller.isMoviesRevsVisible = false;
       }
     },
     {
@@ -29,16 +35,26 @@ function PortfolioController(){
       desc: 'WRITE DESCRIPTION HERE!',
       img: '../images/game.png',
       gif: '',
-      deployedlink: 'http://git.heroku.com/tolaoke-sg-project-1.git'
+      deployedlink: 'http://git.heroku.com/tolaoke-sg-project-1.git',
+      makeProjectVisible: function() {
+        controller.isGameVisible = true;
+        controller.isDefaultVisible =
+        controller.isBeFitVisible =
+        controller.isFamilyTreeVisible =
+        controller.isMoviesRevsVisible = false;
+      }
     },
     {
       title: 'Movie Reviews',
       desc: 'WRITE DESCRIPTION HERE!',
       img: '../images/moviesRevs.png',
       gif: '',
-      deployedlink: 'https://movierevs.herokuapp.com/'
+      deployedlink: 'https://movierevs.herokuapp.com/',
+      makeProjectVisible: function() {
+        controller.isMoviesRevsVisible = true;
+        controller.isDefaultVisible = controller.isBeFitVisible = controller.isFamilyTreeVisible = controller.isGameVisible = false;
     }
-  ];
+  }];
 
 
 
