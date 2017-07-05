@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <div ng-controller="PortfolioController as portfolio">
-<!-- Banner Section -->
-  <div class="banner">
-
-  </div>
 
 <!-- About Me Section -->
-  <div>
-    <article>
+    <section>
       <h2>About Me</h2>
         <div class="holder">
 
@@ -17,12 +12,7 @@
             <span>Web Developer</span>
           </div>
 
-          <div class="aboutme">
-
-
-      <div class="aboutMeCard">
-
-            <ul>
+      <ul>
         Current Employement:
       <li>Web Developer and IT Consulant Sparta Global</li>
       Past Experience:
@@ -34,24 +24,11 @@
     </ul>
      </div>
 
-     <div class="contactCard">
-       <ul>
-     <li>view my <a href="https://github.com/tolavolaoke">Github</a></li>
-    <li>view my <a href="">Linkedin</a></li>
-     <li>view my <a href="/images/myw3schoolsimage.jpg" download >CV</a></li>
-    <li>send me a mail <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">tolavolaoke@hotmail.co.uk</a></li>
-</ul>
    </div>
-
-   </div>
-
-   </div>
-        </div>
-          </article>
-
+ </section>
 
     <!-- PROJECTS section -->
-    <article>
+    <section>
       <h2>Projects</h2>
 
           <div class="projects">
@@ -69,7 +46,6 @@
             </ul>
           </div>
 
-
         <div ng-if="portfolio.isDefaultVisible" class="content" ui-view="projectContent">
         </div>
         <div ng-if="portfolio.isBeFitVisible" class="content" ui-view="beFit">
@@ -77,8 +53,5 @@
         <div ng-if="portfolio.isFamilyTreeVisible" class="content" ui-view="familyTree">
         </div>
 
-
-
-    </article>
-  </div>
+    </section>
 </div>
