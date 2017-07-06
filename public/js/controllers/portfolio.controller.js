@@ -7,7 +7,7 @@ function PortfolioController(){
       desc: 'WRITE DESCRIPTION HERE!',
       img: '../../images/beFit.png',
       gif: 'GIFFY GOES HERE',
-      deployedlink: '',
+      deployedlink: 'www.linkgoeshere.com',
       makeProjectVisible: function() {
         controller.isBeFitVisible = true;
         controller.isDefaultVisible =
@@ -61,6 +61,7 @@ function PortfolioController(){
   function init() {
     console.log(controller);
     controller.isDefaultVisible = true;
+
   }
   init();
 }

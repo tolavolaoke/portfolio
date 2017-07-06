@@ -3,6 +3,22 @@
 background-color: grey;
 }
 
+.nav {
+  color: black;
+  background-color:none;
+  padding: 10px;
+}
+
+.nav a{
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav a:hover{
+  background-color: white;
+  color: white;
+}
+
 /* ---------------Name Title ------------------*/
 .name span {
   display:block;
@@ -110,8 +126,8 @@ height: auto;
 
 
 .projectimage{
-  width: 350px;
-  height:250px;
+  width: 300px;
+  height:200px;
   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -123,8 +139,8 @@ height: auto;
 }
 
 .content{
-  height:518px;
-  width:650px;
+  height:500px;
+  width:600px;
   position: absolute;
   right: 50px;
   /*top: 35px;*/
@@ -136,12 +152,11 @@ height: auto;
 }
 
 .footer {
-  margin-bottom:auto;
-  position: absolute;
-  right: 0;
-  bottom: auto;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
+  bottom: 0;
+width: 100%;
+/* Set the fixed height of the footer here */
+height: 30px;
+background-color: #07374a;
+color: #f0f0e6; }
+
 }

@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 
-<div>
+<div ng-controller="PortfolioController as portfolio">
 
-<h1>{{portfolio.projects.title}}</h1>
-<p>{{portfolio.projects.desc}}</p>
+<div>
+  <ul>
+
+<li>{{portfolio.projects[3].title}}</li>
+<li>{{portfolio.projects[3].desc}}</li>
+<li>{{portfolio.projects[3].gif}}</li>
+<li>{{portfolio.projects[3].deployedlink}}</li>
+</ul>
+</div>
 
 </div>

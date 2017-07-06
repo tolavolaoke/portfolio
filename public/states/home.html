@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <div ng-controller="PortfolioController as portfolio">
 
+  <section class="nav">
+    <div ui-view="navbar"></div>
+  </section>
 <!-- About Me Section -->
-    <section>
-      <h2>About Me</h2>
-        <div class="holder">
-
-          <div class="wrap">
+    <section class="header">
           <div class="name">
                <span>Tola Olaoke</span>
             <span>Web Developer</span>
           </div>
+</section>
 
+<section class="aboutme">
+<div>
       <ul>
         Current Employement:
       <li>Web Developer and IT Consulant Sparta Global</li>
@@ -20,15 +22,12 @@
        <li>Information and Performance Team Assistant & IT Technician Assistant - Barnet Home 2009</li>
         Education:
       <li>Computer Science BSC - Brunel University London</li>
-
     </ul>
-     </div>
-
-   </div>
+  </div>
  </section>
 
     <!-- PROJECTS section -->
-    <section>
+    <section class="projects">
       <h2>Projects</h2>
 
           <div class="projects">
@@ -41,8 +40,6 @@
                 ui-sref="{{project.state}}"
                 ng-click="project.makeProjectVisible()"/>
             </li>
-
-
             </ul>
           </div>
 
@@ -56,6 +53,9 @@
         </div>
         <div ng-if="portfolio.isMoviesRevsVisible" class="content" ui-view="moviesRevs">
         </div>
-
     </section>
+
+    <!-- <section class="footer">
+      <div ui-view="footer"></div>
+    </section> -->
 </div>
