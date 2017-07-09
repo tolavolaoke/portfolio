@@ -15,7 +15,6 @@ function MainRouter($stateProvider, $urlRouterProvider){
       'moviesRevs@home': { templateUrl: '/states/partials/moviesrevs.html' },
       'footer@home': { templateUrl: '/states/partials/footer.html' },
     }
-
   });
 
   $urlRouterProvider.otherwise('/');

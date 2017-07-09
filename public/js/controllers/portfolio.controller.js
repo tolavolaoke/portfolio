@@ -57,7 +57,6 @@ function PortfolioController(){
   }];
 
 
-
   function init() {
     console.log(controller);
     controller.isDefaultVisible = true;

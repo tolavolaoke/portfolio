@@ -4,58 +4,58 @@
   <section class="nav">
     <div ui-view="navbar"></div>
   </section>
-<!-- About Me Section -->
-    <section class="header">
-          <div class="name">
-               <span>Tola Olaoke</span>
-            <span>Web Developer</span>
-          </div>
-</section>
 
-<section class="aboutme">
-<div>
+  <section class="header">
+    <div class="name">
+      <span>Tola Olaoke</span>
+      <span>Web Developer</span>
+    </div>
+  </section>
+
+  <section class="aboutme">
+    <div class="aboutmecard">
       <ul>
-        Current Employement:
-      <li>Web Developer and IT Consulant Sparta Global</li>
+      Current Employement:
+        <li>HTML, CSS and JavaScript Instructor Code First Girls </li>
+        <li>Web Developer and IT Consultant Sparta Global</li>
       Past Experience:
-       <li>Software Tester (voluntary)- Vinspired 2016</li>
-       <li>Information and Performance Team Assistant & IT Technician Assistant - Barnet Home 2009</li>
-        Education:
-      <li>Computer Science BSC - Brunel University London</li>
-    </ul>
-  </div>
- </section>
+        <li>Software Tester (voluntary)- Vinspired 2016</li>
+        <li>Information and Performance Team Assistant & IT Technician Assistant - Barnet Home 2009</li>
+      Education:
+        <li>Computer Science Bsc </li>
+        <li>Digital Service Design Msc </li>
+      </ul>
+    </div>
+  </section>
 
     <!-- PROJECTS section -->
-    <section class="projects">
-      <h2>Projects</h2>
+  <section class="portfolio">
+    <div class="projects">
+      <ul>
+        <li ng-repeat="project in portfolio.projects track by $index" class="projectbox">
+          <img
+            ng-src="{{project.img}}"
+            alt="placeholder"
+            class="projectimage"
+            ui-sref="{{project.state}}"
+            ng-click="project.makeProjectVisible()"/>
+        </li>
+      </ul>
+    </div>
 
-          <div class="projects">
-            <ul>
-            <li ng-repeat="project in portfolio.projects track by $index" class="projectbox">
-              <img
-                ng-src="{{project.img}}"
-                alt="placeholder"
-                class="projectimage"
-                ui-sref="{{project.state}}"
-                ng-click="project.makeProjectVisible()"/>
-            </li>
-            </ul>
-          </div>
+    <div ng-if="portfolio.isDefaultVisible" class="content" ui-view="projectContent">
+    </div>
+    <div ng-if="portfolio.isBeFitVisible" class="content" ui-view="beFit">
+    </div>
+    <div ng-if="portfolio.isFamilyTreeVisible" class="content" ui-view="familyTree">
+    </div>
+    <div ng-if="portfolio.isGameVisible" class="content" ui-view="game">
+    </div>
+    <div ng-if="portfolio.isMoviesRevsVisible" class="content" ui-view="moviesRevs">
+    </div>
+  </section>
 
-        <div ng-if="portfolio.isDefaultVisible" class="content" ui-view="projectContent">
-        </div>
-        <div ng-if="portfolio.isBeFitVisible" class="content" ui-view="beFit">
-        </div>
-        <div ng-if="portfolio.isFamilyTreeVisible" class="content" ui-view="familyTree">
-        </div>
-        <div ng-if="portfolio.isGameVisible" class="content" ui-view="game">
-        </div>
-        <div ng-if="portfolio.isMoviesRevsVisible" class="content" ui-view="moviesRevs">
-        </div>
-    </section>
-
-    <!-- <section class="footer">
-      <div ui-view="footer"></div>
-    </section> -->
+  <section class="footer">
+    <div ui-view="footer"></div>
+  </section>
 </div>
