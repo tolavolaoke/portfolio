@@ -13,7 +13,9 @@ function PortfolioController(){
         controller.isDefaultVisible =
         controller.isFamilyTreeVisible =
         controller.isGameVisible =
-        controller.isMoviesRevsVisible = false;
+        controller.isMoviesRevsVisible =
+        controller.isCongaVisible =
+        controller.isRateReviewApp = false;
       }
     },
     {
@@ -27,7 +29,9 @@ function PortfolioController(){
         controller.isDefaultVisible =
         controller.isBeFitVisible =
         controller.isGameVisible =
-        controller.isMoviesRevsVisible = false;
+        controller.isMoviesRevsVisible =
+        controller.isCongaVisible =
+        controller.isRateReviewApp = false;
       }
     },
     {
@@ -41,7 +45,9 @@ function PortfolioController(){
         controller.isDefaultVisible =
         controller.isBeFitVisible =
         controller.isFamilyTreeVisible =
-        controller.isMoviesRevsVisible = false;
+        controller.isMoviesRevsVisible =
+        controller.isCongaVisible =
+        controller.isRateReviewApp = false;
       }
     },
     {
@@ -52,14 +58,53 @@ function PortfolioController(){
       deployedlink: 'https://movierevs.herokuapp.com/',
       makeProjectVisible: function() {
         controller.isMoviesRevsVisible = true;
-        controller.isDefaultVisible = controller.isBeFitVisible = controller.isFamilyTreeVisible = controller.isGameVisible = false;
-    }
+        controller.isDefaultVisible =
+        controller.isBeFitVisible =
+        controller.isFamilyTreeVisible =
+        controller.isGameVisible =
+        controller.isCongaVisible =
+        controller.isRateReviewApp = false;
+      }
+    },
+    {
+    title: 'Conga',
+    desc: 'WRITE DESCRIPTION HERE!',
+    img: '../images/placeholder.jpg',
+    gif: '',
+    deployedlink: 'ADD LINK HERE',
+    makeProjectVisible: function() {
+      controller.isCongaVisible = true;
+      controller.isDefaultVisible =
+      controller.isBeFitVisible =
+      controller.isFamilyTreeVisible =
+      controller.isGameVisible =
+      controller.isMoviesRevsVisible =
+      controller.isRateReviewApp = false;
+      }
+    },
+    {
+    title: 'Rate and Review App',
+    desc: 'WRITE DESCRIPTION HERE!',
+    img: '../images/placeholder.jpg',
+    gif: '',
+    deployedlink: 'ADD DEPLOY LINK HERE',
+    makeProjectVisible: function() {
+      controller.isRateReviewApp = true;
+      controller.isDefaultVisible =
+      controller.isBeFitVisible =
+      controller.isFamilyTreeVisible =
+      controller.isGameVisible =
+      controller.isMoviesRevsVisible =
+      controller.isCongaVisible =false;
+  }
+
   }];
 
 
   function init() {
     console.log(controller);
     controller.isDefaultVisible = true;
+  ;
 
   }
   init();

@@ -8,12 +8,14 @@
   <section class="header">
     <div class="name">
       <span>Tola Olaoke</span>
-      <span>Web Developer</span>
     </div>
   </section>
 
+<section class="main">
+
   <section class="aboutme">
-    <div class="aboutmecard">
+    <!-- <div class="aboutmecard"> -->
+    <p>Web and UX Designer</p>
       <ul>
       Current Employement:
         <li>HTML, CSS and JavaScript Instructor Code First Girls </li>
@@ -25,7 +27,7 @@
         <li>Computer Science Bsc </li>
         <li>Digital Service Design Msc </li>
       </ul>
-    </div>
+    <!-- </div> -->
   </section>
 
     <!-- PROJECTS section -->
@@ -43,17 +45,31 @@
       </ul>
     </div>
 
-    <div ng-if="portfolio.isDefaultVisible" class="content" ui-view="projectContent">
+<div class="contentlist">
+      <div ng-if="portfolio.isDefaultVisible" class="content" ui-view="projectContent">
     </div>
-    <div ng-if="portfolio.isBeFitVisible" class="content" ui-view="beFit">
+
+      <div ng-if="portfolio.isBeFitVisible" class="content" ui-view="beFit">
     </div>
-    <div ng-if="portfolio.isFamilyTreeVisible" class="content" ui-view="familyTree">
+
+      <div ng-if="portfolio.isFamilyTreeVisible" class="content" ui-view="familyTree">
     </div>
+
     <div ng-if="portfolio.isGameVisible" class="content" ui-view="game">
     </div>
-    <div ng-if="portfolio.isMoviesRevsVisible" class="content" ui-view="moviesRevs">
+
+      <div ng-if="portfolio.isMoviesRevsVisible" class="content" ui-view="moviesRevs">
     </div>
+
+      <div ng-if="portfolio.isCongaVisible" class="content" ui-view="conga">
+    </div>
+
+    <div ng-if="portfolio.isRateReviewAppVisible" class="content" ui-view="rateReviewApp">
+    </div>
+</div>
   </section>
+
+</section>
 
   <section class="footer">
     <div ui-view="footer"></div>

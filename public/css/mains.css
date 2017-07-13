@@ -2,6 +2,8 @@
 .nav {
   color: black;
   padding: 10px;
+  position: fixed;
+  top: 0;
 }
 
 .nav a{
@@ -9,45 +11,40 @@
   padding: 10px;
 }
 
-.nav a:hover{
-  /*background-color: white;*/
+.nav a:hover:active{
   color: white;
 }
 
 
 /* ---------------Name Title ------------------*/
 body {
-  background-color: grey;
+  background-color: #ffb6c1;
+  font-size: 12px;
+  font-family: "Segoe UI";
 }
 
 .header{
-  height:300px;
+  height:150px;
   width: auto;
   -webkit-font-smoothing: antialiased !important;
-  webkit-text-stroke: 1px rgba(0,0,0,0.1);
+  -webkit-text-stroke: 1px rgba(0,0,0,0);
 }
+
 .name span {
   display:block;
 }
 
 .name {
-  width:400px;
+  /*width:400px;*/
   margin:20px auto;
 	text-align: center;
-	color:lightgrey;
   line-height:0.85;
-  font-family: Tahoma, Geneva, sans-serif;
-  font-weight: bold;
 }
 
 .name span:nth-child(1) {
-  font-size: 100px;
-}
-
-.name span:nth-child(2) {
   font-family: 'Pacifico', cursive;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 150px;
   position: relative;
   z-index: 1;
   text-shadow: 5px 0 0 grey,
@@ -63,59 +60,47 @@ body {
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
   color:#fff;
-  margin-top:-5px;
+  margin-top:150px;
 }
 
-.name span:nth-child(3) {
-  font-size: 150px;
-  margin-top:-12px;
-}
+.main{
+  background-color: white;
 
+
+}
 /*--------------About me--------------------------*/
 .aboutme {
-  font-family: 'Quattrocento', Arial, sans-serif;
-  width: auto;
+  width: 80%;
   height:300px;
-  margin: 50px;
+  margin:50px auto;
+  font-size: 12px;
+  padding:40px 10px;
+  background: white;
+  color: black;
 }
 
 .aboutme li{
   list-style: none;
 }
 
-.aboutmecard {
-  font-size: 12px;
-  padding:10px 10px;
-  /*width: auto;
-  height: auto;*/
-  margin:10px;
-}
-
 
 /*----------projects ----------------*/
 .portfolio{
-  height: 300px;
-  width:auto;
+  height: 130px;
+  width:80%;
+  background-color: white;
+  padding: 10px 10px;
+  margin: 50px auto;
 }
 
-.projects{
-  /*display: inline-block;*/
-  float:left;
-  padding: 10px;
-  /*margin-top: 0;*/
-  /*width:auto;*/
-  /*margin-right:auto;*/
-  /*overflow-y: auto;*/
-  /*height: 90vh;*/
-}
-
-.projectbox{
+.projectbox {
   list-style: none;
   display:inline;
   /*margin: 0 auto;*/
-  /*padding: 10px;
-  height: 100px;*/
-  /*width: 300px;*/
+  /*padding: 10px;*/
+  /*height: 00px;*/
+  width: 100px;
+
 }
 
 .projectimage{
@@ -134,39 +119,24 @@ body {
 
 .projectcontent{
   list-style: none;
+  /*margin: 0 auto;*/
+  padding: 10px;
+  width:80%;
 }
 
 .content{
-  height:500px;
-  width:600px;
-  position: absolute;
-  right: 50px;
-  /*top: 35px;*/
-  /*bottom: 0;*/
-  padding:10px;
-  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-}
-
-
-
-.content {
-  /*position:relative;*/
-  /*vertical-align: middle;*/
-  /*color: #0b7;*/
-  /*display: inline-block;*/
-  /*height: 60px;*/
-  /*line-height: 60px;*/
-  /*text-align: center;*/
+  height:350px;
+  /*width:80%;*/
+  position: relative;
+  margin: 30px;
+  padding:10px ;
   transition: 0.5s;
-  /*padding: 0 20px;*/
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   -webkit-transition:0.5s;
 }
 
 .content:hover {
-  border: 2px solid rgba(0,160,80,0);
+  /*border: 2px solid rgba(0,160,80,0);*/
   color: #FFF;
 }
 
@@ -180,7 +150,7 @@ body {
   left:0;
   box-sizing: border-box;
   -webkit-transform: scale(0);
-  transition: 0.5s;
+  transition: 0.9s;
 }
 
 .content::before {
@@ -199,13 +169,12 @@ body {
   -webkit-transform: scale(1);
 }
 
-
 .footer{
   font-size: 12px;
   padding:10px 10px;
   width: auto;
   height: 10px;
-  margin-top: 500px;
+  margin-top: 400px;
   text-align: center;
 }
 
