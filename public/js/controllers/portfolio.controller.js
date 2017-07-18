@@ -4,8 +4,8 @@ function PortfolioController(){
   controller.projects = [
     {
       title: 'Be Fit',
-      desc: 'WRITE DESCRIPTION HERE!',
-      img: '../../images/beFit.png',
+      desc: 'An online application that inspires and encourages living a healthy lifestyle.',
+      img: '../images/beFit.png',
       gif: 'GIFFY GOES HERE',
       deployedlink: 'www.linkgoeshere.com',
       makeProjectVisible: function() {
@@ -15,7 +15,7 @@ function PortfolioController(){
         controller.isGameVisible =
         controller.isMoviesRevsVisible =
         controller.isCongaVisible =
-        controller.isRateReviewApp = false;
+        controller.isRateReviewAppVisible = false;
       }
     },
     {
@@ -31,7 +31,7 @@ function PortfolioController(){
         controller.isGameVisible =
         controller.isMoviesRevsVisible =
         controller.isCongaVisible =
-        controller.isRateReviewApp = false;
+        controller.isRateReviewAppVisible = false;
       }
     },
     {
@@ -47,7 +47,7 @@ function PortfolioController(){
         controller.isFamilyTreeVisible =
         controller.isMoviesRevsVisible =
         controller.isCongaVisible =
-        controller.isRateReviewApp = false;
+        controller.isRateReviewAppVisible = false;
       }
     },
     {
@@ -63,7 +63,7 @@ function PortfolioController(){
         controller.isFamilyTreeVisible =
         controller.isGameVisible =
         controller.isCongaVisible =
-        controller.isRateReviewApp = false;
+        controller.isRateReviewAppVisible = false;
       }
     },
     {
@@ -79,7 +79,7 @@ function PortfolioController(){
       controller.isFamilyTreeVisible =
       controller.isGameVisible =
       controller.isMoviesRevsVisible =
-      controller.isRateReviewApp = false;
+      controller.isRateReviewAppVisible = false;
       }
     },
     {
@@ -89,7 +89,7 @@ function PortfolioController(){
     gif: '',
     deployedlink: 'ADD DEPLOY LINK HERE',
     makeProjectVisible: function() {
-      controller.isRateReviewApp = true;
+      controller.isRateReviewAppVisible = true;
       controller.isDefaultVisible =
       controller.isBeFitVisible =
       controller.isFamilyTreeVisible =

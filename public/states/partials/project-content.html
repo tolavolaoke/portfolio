@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 
-<h1> THIS IS THE PROJECT DEFAULT CONTENT boring really! </h1>
-  <p>Need to make it a bit more interesting! </p>
-    <p>Or maybe leave it blank! </p>
+<div ng-controller="PortfolioController as portfolio">
+  <div>
+    <ul class="projectcontent">
+      <li><h3>{{portfolio.projects[0].title}}</h3></li>
+      <li>{{portfolio.projects[0].desc}}</li>
+      <li>{{portfolio.projects[0].gif}}</li>
+      <li><a href="www..com">{{portfolio.projects[0].deployedlink}}</a></li>
+    </ul>
+  </div>
+</div>

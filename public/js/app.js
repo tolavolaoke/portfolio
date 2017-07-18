@@ -13,6 +13,8 @@ function MainRouter($stateProvider, $urlRouterProvider){
       'familyTree@home': { templateUrl: '/states/partials/family-tree.html' },
       'game@home': { templateUrl: '/states/partials/game.html' },
       'moviesRevs@home': { templateUrl: '/states/partials/moviesrevs.html' },
+      'conga@home': { templateUrl: '/states/partials/conga.html' },
+      'rateReviewApp@home': { templateUrl: '/states/partials/rate-review-app.html' },
       'footer@home': { templateUrl: '/states/partials/footer.html' },
     }
   });
