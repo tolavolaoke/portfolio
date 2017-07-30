@@ -32,7 +32,11 @@ body {
   font-size: 14px;
   font-family: "Segoe UI";
 }
-
+.titles {
+  background: lightblue;
+  font-size: 16px;
+  padding: 10px;
+}
 
 .name{
   text-align: center;
@@ -111,7 +115,7 @@ color: white;
 }
 
 .aboutme h2{
-    font-size: 7.0em;
+    font-size: 6.7em;
     font-weight: 700;
     line-height: 1.1em;
     text-transform: uppercase;
@@ -145,24 +149,21 @@ font-family: Pacifico;
 .employmentlist{
   list-style: none;
 float: left;
+/*text-align: center;*/
   width:50%;
 }
 
 
-.logoslist{
+/*.logoslist{
   list-style: none;
   float: right;
   width: 50%;
-}
+}*/
 
-.logoslist li{
+/*.logoslist li{
   display: inline;
-}
+}*/
 
-.logoslist img{
-  width: 10%;
-  height:20%;
-}
 
 /*----------projects ----------------*/
 .portfolio{
@@ -223,6 +224,7 @@ float: left;
 .projectcontent a{
 
   font-family: Pacifico;
+  color: #f1cf63;
 }
 
 .content{
@@ -238,7 +240,7 @@ float: left;
 
 .content:hover {
   /*border: 2px solid rgba(0,160,80,0);*/
-  color: #FFF;
+  color: black;
 }
 
 .content::before, .content::after {
@@ -255,14 +257,14 @@ float: left;
 }
 
 .content::before {
-  border-bottom: 3px solid #FFF;
-  border-left: 3px solid #FFF;
+  border-bottom: 3px solid #f1cf63;
+  border-left: 3px solid #f1cf63;
   -webkit-transform-origin: 0 100%;
 }
 
 .content::after {
-  border-top: 3px solid #FFF;
-  border-right: 3px solid #FFF;
+  border-top: 3px solid #f1cf63;
+  border-right: 3px solid #f1cf63;
   -webkit-transform-origin: 100% 0%;
 }
 
