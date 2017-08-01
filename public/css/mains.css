@@ -3,7 +3,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
-    /*width: 100%;*/
 }
 
 .nav {
@@ -25,13 +24,10 @@
 
 /* ---------------Name Title ------------------*/
 body {
-  /*background-color: #ffb6c1;*/
-  /*background-image: url("../images/barcelona.jpg");
-      background-size: cover;*/
-
   font-size: 14px;
   font-family: "Segoe UI";
 }
+
 .titles {
   background: lightblue;
   font-size: 16px;
@@ -45,6 +41,7 @@ body {
   top: 40%;
   width: 100%;
 }
+
 .firstname {
 font-size: 100px;
 font-family: 'Pacifico', sans-serif;
@@ -58,47 +55,6 @@ color: white;
 }
 
 
-
-/*.header{
-  height:150px;
-  width: auto;
-  -webkit-font-smoothing: antialiased !important;
-  -webkit-text-stroke: 1px rgba(0,0,0,0);
-}
-
-.name span {
-  display:block;
-}
-
-.name {
-  /*width:400px;*/
-  /*margin:20px auto;
-	text-align: center;
-  line-height:0.85;
-}
-
-.name span:nth-child(1) {
-  font-family: 'Pacifico', cursive;
-  font-weight: 400;
-  font-size: 150px;
-  position: relative;
-  z-index: 1;
-  text-shadow: 5px 0 0 grey,
-				-5px 0 0 grey,
-				0 5px 0 grey,
-				0 -5px 0 grey,
-				4px 4px grey,
-				-4px -4px 0 grey,
-				4px -4px 0 grey,
-				-4px 4px 0 grey;
-  -webkit-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
-  color:#fff;
-  margin-top:150px;
-}*/*/
-
 .main{
   background-color: white;
 }
@@ -106,9 +62,8 @@ color: white;
 /*--------------About me--------------------------*/
 .aboutme {
   width: 80%;
-  height:700px;
+  height:400px;
   margin:50px auto;
-  /*font-size: 12px;*/
   padding:40px 10px;
   background: white;
   color: black;
@@ -148,48 +103,44 @@ font-family: Pacifico;
 
 .employmentlist{
   list-style: none;
-float: left;
-/*text-align: center;*/
+  float: left;
   width:50%;
 }
+.employmentlist img{
+  width: 50px;
+  height: 50px;
+  list-style: none;
+}
 
-
-/*.logoslist{
+.educationlist{
   list-style: none;
   float: right;
   width: 50%;
-}*/
+}
 
-/*.logoslist li{
+.educationlist li{
   display: inline;
-}*/
+}
 
+.educationlist img{
+  width: 50px;
+  height: 50px;
+  list-style: none;
+}
 
 /*----------projects ----------------*/
 .portfolio{
-  height: 130px;
+  height: 150px;
   width:80%;
-  /*background-color: #ffb6c1;*/
   padding: 10px 10px;
   margin: 50px auto;
 }
 
-/*portfolio {
-    height: 130px;
-    width: 100%;*/
-    /* background-color: white; */
-    /*padding: 10px 10px;
-    margin: 0 auto;
-    background-color: pink;*/
 
 .projectbox {
   list-style: none;
   display:inline;
-  /*margin: 0 auto;*/
-  /*padding: 10px;*/
-  /*height: 00px;*/
   width: 100px;
-
 }
 
 .projectimage{
@@ -208,38 +159,25 @@ float: left;
 
 .projectcontent{
   list-style: none;
-  /*margin: 0 auto;*/
   padding: 10px;
   width:80%;
 }
 
-.projectcontent h3{
-
-}
-
-.projectcontent p{
-
-}
-
 .projectcontent a{
-
   font-family: Pacifico;
   color: #f1cf63;
 }
 
 .content{
   height:350px;
-  /*width:80%;*/
   position: relative;
   margin: 30px;
   padding:10px ;
   transition: 0.5s;
-  /*border: 2px solid black;*/
   -webkit-transition:0.5s;
 }
 
 .content:hover {
-  /*border: 2px solid rgba(0,160,80,0);*/
   color: black;
 }
 
@@ -276,7 +214,7 @@ float: left;
   font-size: 12px;
   padding:10px 10px;
   width: auto;
-  height: 90px;
+  height: 100px;
   margin-top: 400px;
   text-align: center;
   background-color: lightblue;
@@ -285,7 +223,6 @@ float: left;
 .contactcard{
   list-style: none;
   align-items: center;
-
 }
 
 .contactcard li{
@@ -294,6 +231,6 @@ float: left;
 }
 
 .contactcard img{
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
