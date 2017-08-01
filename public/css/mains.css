@@ -1,3 +1,10 @@
+/*Helps in making site resposive*/
+* {
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: "Segoe UI";
+}
+
 .cover{
     background-image: url("../images/barcelona.jpg");
     background-repeat: no-repeat;
@@ -19,20 +26,17 @@
 
 .nav a:hover:active{
   color: white;
+  font-weight: bold;
 }
 
 
 /* ---------------Name Title ------------------*/
-body {
-  font-size: 14px;
-  font-family: "Segoe UI";
-}
 
-.titles {
+/*.main h1 {
   background: lightblue;
   font-size: 16px;
   padding: 10px;
-}
+}*/
 
 .name{
   text-align: center;
@@ -42,13 +46,13 @@ body {
   width: 100%;
 }
 
-.firstname {
+.header .firstname {
 font-size: 100px;
 font-family: 'Pacifico', sans-serif;
 color: lightblue;
 }
 
-.lastname {
+.header .lastname {
 font-size: 100px;
 font-family: 'Segoe UI';
 color: white;
@@ -59,14 +63,25 @@ color: white;
   background-color: white;
 }
 
-/*--------------About me--------------------------*/
+/*Makes the eduction list and the employment list repsonsive*/
+.two-col-grid .grid-item {
+  width: 50%;
+  float: left;
+}
+
 .aboutme {
   width: 80%;
-  height:400px;
+  height: 600px;
   margin:50px auto;
   padding:40px 10px;
   background: white;
   color: black;
+}
+
+.aboutme h1 {
+  background: lightblue;
+  font-size: 16px;
+  padding: 10px;
 }
 
 .aboutme h2{
@@ -103,9 +118,8 @@ font-family: Pacifico;
 
 .employmentlist{
   list-style: none;
-  float: left;
-  width:50%;
 }
+
 .employmentlist img{
   width: 50px;
   height: 50px;
@@ -114,8 +128,6 @@ font-family: Pacifico;
 
 .educationlist{
   list-style: none;
-  float: right;
-  width: 50%;
 }
 
 .educationlist li{
@@ -128,15 +140,19 @@ font-family: Pacifico;
   list-style: none;
 }
 
-/*----------projects ----------------*/
+
 .portfolio{
-  height: 150px;
+  height: 600px;
   width:80%;
   padding: 10px 10px;
   margin: 50px auto;
 }
 
-
+.portfolio h1 {
+  background: lightblue;
+  font-size: 16px;
+  padding: 10px;
+}
 .projectbox {
   list-style: none;
   display:inline;
@@ -212,12 +228,13 @@ font-family: Pacifico;
 
 .footer{
   font-size: 12px;
+  position: fixed;
   padding:10px 10px;
-  width: auto;
+  width: 100%;
   height: 100px;
-  margin-top: 400px;
+  bottom: 0px;
   text-align: center;
-  background-color: lightblue;
+  background-color: white;
 }
 
 .contactcard{
