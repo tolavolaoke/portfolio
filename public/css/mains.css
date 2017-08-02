@@ -9,7 +9,8 @@
     background-image: url("../images/barcelona.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 550px;
+    overflow:hidden;
 }
 
 .nav {
@@ -140,7 +141,6 @@ font-family: Pacifico;
   list-style: none;
 }
 
-
 .portfolio{
   height: 600px;
   width:80%;
@@ -225,6 +225,24 @@ font-family: Pacifico;
 .content:hover::after, .content:hover::before {
   -webkit-transform: scale(1);
 }
+
+.projectscreenshots{
+  /*border: 1px solid black;*/
+  width: 100%;
+  height: 40px;
+  /*display: inline-block;*/
+}
+
+.projectscreenshots div{
+  display: inline-block;
+}
+
+.projectscreenshots img{
+  width: 10%;
+  height:50px;
+  /*display:inline-block;*/
+}
+
 
 .footer{
   font-size: 12px;
