@@ -11,6 +11,7 @@
     background-size: cover;
     height: 550px;
     overflow:hidden;
+
 }
 
 .nav {
@@ -49,19 +50,19 @@
 
 .header .firstname {
 font-size: 100px;
-font-family: 'Pacifico', sans-serif;
-color: lightblue;
+font-family: 'Karla', sans-serif;
+color: white;
 }
 
 .header .lastname {
 font-size: 100px;
-font-family: 'Segoe UI';
+font-family: 'Karla;
 color: white;
 }
 
 
 .main{
-  background-color: white;
+  background-color: lightblue;
 }
 
 /*Makes the eduction list and the employment list repsonsive*/
@@ -73,7 +74,7 @@ color: white;
 .aboutme {
   width: 80%;
   height: 600px;
-  margin:50px auto;
+  margin:0px auto;
   padding:40px 10px;
   background: white;
   color: black;
@@ -109,6 +110,7 @@ color: white;
   }
 
 .aboutme h3{
+  border: 2px solid lightblue;
 
 }
 
@@ -142,6 +144,7 @@ font-family: Pacifico;
 }
 
 .portfolio{
+  background:white;
   height: 600px;
   width:80%;
   padding: 10px 10px;
