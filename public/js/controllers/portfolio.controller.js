@@ -20,7 +20,7 @@ function PortfolioController(){
     },
     {
       title: 'Family Tree',
-      desc: 'WRITE DESCRIPTION HERE!',
+      desc: 'An app that allows users to create an account and create a list of relatives and gives users the ability to locate them on google maps.',
       img: '../images/familyTree.png',
       gif: '',
       deployedlink: 'https://sg-project-3-to.herokuapp.com/#!/',
@@ -36,7 +36,7 @@ function PortfolioController(){
     },
     {
       title: 'Game',
-      desc: 'WRITE DESCRIPTION HERE!',
+      desc: 'A JavaScript Game where instructions are provided and players can play and score points ',
       img: '../images/game.png',
       gif: '',
       deployedlink: 'http://git.heroku.com/tolaoke-sg-project-1.git',
@@ -52,7 +52,7 @@ function PortfolioController(){
     },
     {
       title: 'Movie Reviews',
-      desc: 'WRITE DESCRIPTION HERE!',
+      desc: 'This project uses a rMVC approach and utilises HTTP requests. It allows the creation of new movies and reviews and also updates the database so the user can add, delete, edit their favourite movies and only create reviews.!',
       img: '../images/moviesRevs.png',
       gif: '',
       deployedlink: 'https://movierevs.herokuapp.com/',
@@ -68,8 +68,8 @@ function PortfolioController(){
     },
     {
     title: 'Conga',
-    desc: 'WRITE DESCRIPTION HERE!',
-    img: '../images/placeholder.jpg',
+    desc: 'A moblie application that connects people together with events, activties or hobbies they have in common',
+    img: '../images/conga.png',
     gif: '',
     deployedlink: 'ADD LINK HERE',
     makeProjectVisible: function() {
@@ -84,8 +84,8 @@ function PortfolioController(){
     },
     {
     title: 'Rate and Review App',
-    desc: 'WRITE DESCRIPTION HERE!',
-    img: '../images/placeholder.jpg',
+    desc: 'A mobile application which allows students to review and rate their landord and the accommodation that they are living in.',
+    img: '../images/randr.png',
     gif: '',
     deployedlink: 'ADD DEPLOY LINK HERE',
     makeProjectVisible: function() {
