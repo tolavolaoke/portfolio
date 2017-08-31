@@ -3,16 +3,25 @@
 <div ng-controller="PortfolioController as portfolio">
   <div>
     <ul class="projectcontent">
-      <li><h3>{{portfolio.projects[0].title}}</h3></li>
-      <li>{{portfolio.projects[0].desc}}</li>
-      <li class="gif"><img src="..\images\befitgif.gif" alt=""></li>
-    <li><p>A Website developed as part of Code First Girls Course Project.</p></li>
-    <li><p>The application idea was to inspire and encourage people in living a healthy lifestyle.</p></li>
-    <li>Technologies used:</li>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>Jquery</li>
-      <li><a href="www..com">{{portfolio.projects[0].deployedlink}}</a></li>
+      <table>
+          <tr>
+              <td>
+                  <li class="gif"><img src="..\images\befitgif.gif" alt=""></li>
+              </td>
+              <td>
+                  <li><h3>{{portfolio.projects[0].title}}</h3></li>
+                  <li>{{portfolio.projects[0].desc}}</li>
+                <li><p>A Website developed as part of Code First Girls Course Project.</p></li>
+                <li><p>The application idea was to inspire and encourage people in living a healthy lifestyle.</p></li>
+                <li>Technologies used:</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Jquery</li>
+                  <li><a href="www..com">{{portfolio.projects[0].deployedlink}}</a></li>
+                          </td>
+
+            </tr>
+          </table>
     </ul>
   </div>
 </div>

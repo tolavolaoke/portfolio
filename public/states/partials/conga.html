@@ -3,11 +3,18 @@
 <div ng-controller="PortfolioController as portfolio">
   <div>
     <ul class="projectcontent">
-      <li><h3>{{portfolio.projects[4].title}}</h3></li>
-      <li>{{portfolio.projects[4].desc}}</li>
-      <li class="gif"><img src="..\images\congagif.gif" alt=""></li>
-     
-      <li><a href="www..com">{{portfolio.projects[4].deployedlink}}</a></li>
+        <table>
+            <tr>
+                <td>
+                    <li class="gif"><img src="..\images\congagif.gif" alt=""></li>
+                </td>
+                <td>
+                    <li><h3>{{portfolio.projects[4].title}}</h3></li>
+                    <li>{{portfolio.projects[4].desc}}</li>
+                    <li><a href="www..com">{{portfolio.projects[4].deployedlink}}</a></li>
+                </td>
+            </tr>
+        </table>
     </ul>
   </div>
 </div>
