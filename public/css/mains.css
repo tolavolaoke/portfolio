@@ -301,6 +301,12 @@ width:350px;
 }
 
 /* MEDIA QUERIES */
+/*RESPONSIVE FOR TABLET */
+
+@media screen and (max-width: 768px){
+
+}
+
 /*RESPONSIVE FOR MOBILE */
 
 @media screen and (max-width: 480px){

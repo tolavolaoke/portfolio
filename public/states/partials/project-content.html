@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 
-<div ng-controller="PortfolioController as portfolio">
+<!-- <div ng-controller="PortfolioController as portfolio"> -->
+    <div ng-if="portfolio.isDefaultVisible" class="content" ui-view="projectContent">
+      <!-- </div> -->
   <div>
     <ul class="projectcontent">
       <li><h3>{{portfolio.projects[0].title}}</h3></li>
       <li>{{portfolio.projects[0].desc}}</li>
       <li><a href="www..com">{{portfolio.projects[0].deployedlink}}</a></li>
+      <button id='backbtn'>back</button>
     </ul>
   </div>
 </div>
