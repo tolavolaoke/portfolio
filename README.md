@@ -4,8 +4,10 @@ My online portfolio and cv
 
 ## Built with
 
-Bootstap 4 framework
-HTML, CSS
+Angular JS
+Bootstrap 4 framework
+HTML
+CSS
 
 ## Author
 
