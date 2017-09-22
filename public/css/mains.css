@@ -176,7 +176,7 @@
   list-style: none;
   width:90%;
   height:300px;
-  border: 1px solid;
+  /* border: 1px solid; */
   margin:auto; 
 }
 
@@ -247,6 +247,7 @@
 .gif img{
 height: 200px;
 width:350px;
+margin: 20px;
 }
 
 .info{

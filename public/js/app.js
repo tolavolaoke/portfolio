@@ -8,7 +8,6 @@ function MainRouter($stateProvider, $urlRouterProvider){
     views: {
       '': { templateUrl: '/states/home.html' },
       'navbar@home': { templateUrl: '/states/partials/navbar.html' },
-      'projectContent@home': { templateUrl: '/states/partials/project-content.html' },
       'beFit@home': { templateUrl: '/states/partials/be-fit.html' },
       'familyTree@home': { templateUrl: '/states/partials/family-tree.html' },
       'game@home': { templateUrl: '/states/partials/game.html' },
@@ -18,6 +17,7 @@ function MainRouter($stateProvider, $urlRouterProvider){
       'footer@home': { templateUrl: '/states/partials/footer.html' },
     }
   });
+
 
   $urlRouterProvider.otherwise('/');
 }
